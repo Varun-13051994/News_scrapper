@@ -41,6 +41,6 @@ df = pd.DataFrame(data=datalist, columns = ['Article title', 'Published date', '
 
 df['Published date'] = pd.to_datetime(df['Published date'], format = "mixed")
 
-df.to_csv(r"C:\Users\sumithras\OneDrive\Desktop\Honeywell_news.csv", index = False)
+df.to_csv(r"C:\Users\sumithras\OneDrive\Desktop\Honeywell_news.csv", index = False, sep = "|")
 
 print('Export of news article is successful! 🥂😀')
